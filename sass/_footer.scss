@@ -1,0 +1,103 @@
+.footer{
+
+    background-color: #34253C;
+    grid-area: 2 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14.6rem) [col-start]) [center-end] minmax(2rem, 1fr) [full-end]; 
+
+
+    &__container{
+        grid-column: center-start / center-end;
+
+    }
+
+    &__icons{
+        padding-top: 1.4rem;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #ed4599;
+        padding-bottom: 1rem;
+    }
+
+    &__icon{
+
+        margin-left: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+          
+        }
+
+        img{
+            
+            width: 40px;
+            height: 40px;
+            @media screen and (max-width: 500px) {
+                width: 25px;
+                height: 25px;
+        
+            }
+        }
+
+        h4{
+            font-size: 1.8rem;
+            @media screen and (max-width: 500px) {
+               font-size: 1.2rem;
+        
+            }
+            color: #fff;
+            margin-top: 3px;
+            font-weight: 100;
+            transition: all 0.4s ease-in-out;
+            border-bottom: 1px solid transparent;
+            &:hover{
+                border-bottom: 1px solid $secondary-color;;
+            }
+        
+        }
+
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+
+    &__social{
+        display: flex;
+
+        &-icon{
+
+            margin-left: 2rem;
+            
+            img{
+
+                width: 35px;
+                height: 35px;
+                @media screen and (max-width: 500px) {
+                    width: 25px;
+                    height: 25px;
+            
+                }
+            }
+        }
+    }
+
+    &__copy{
+        color: #d6d6d6;
+        font-size: 1.4rem;
+        font-weight: 100;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+
+            color:#fff
+        }
+    }
+
+}

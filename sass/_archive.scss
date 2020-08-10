@@ -1,0 +1,56 @@
+.archive{
+
+    &__hero{
+
+        h2{
+            font-size: 3.4rem;
+            padding: 0rem 4rem;
+            margin-top: -74px;
+            @media screen and (max-width: 800px) {
+                
+                margin-top: -30px;
+            }
+            color: darkviolet;
+        }
+    }
+
+
+
+    &__article{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media screen and (max-width: 550px) {
+            
+            grid-template-columns: 1fr;
+           
+        }
+        grid-template-rows: min-content;
+        column-gap: 30px;
+        row-gap: 3rem;
+        margin-bottom: 6rem;
+        min-height: 503px;
+    }
+
+
+    &__paginate{
+
+        text-align: center;
+        grid-column: 1 / -1;
+        span.current{
+            color: #fff;
+            background: $primary-color;
+            padding: 0 6px;
+            border-radius: 4px;
+            margin: 0 2px;
+        }
+        span,a{
+            font-size: 2.3rem;
+            margin-left: 6px;
+        }
+        a{
+            color: #5f5f5f;
+        }
+    }
+
+}
